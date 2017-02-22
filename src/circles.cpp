@@ -56,21 +56,21 @@ void circle::draw(){
 
 void circle::zenoToPoint1(float catchX, float catchY){
     
-// if (mouseX < 50 && mouseY  <50) {
-//     
-//    pos.x = catchX ++;
-//    pos.y = catchY ++;
-//     
-//     
-//   }else{
-//    pos.x = catchUpSpeed * catchX + (1 - catchUpSpeed)*pos.x;
-//    pos.y = catchUpSpeed * catchY + (1 - catchUpSpeed)*pos.y;
-//    }
+if (catchX > ofGetWidth()/4 && catchX < 1024 - ofGetWidth()/4 && catchY > ofGetHeight()/4 && catchY < 768 - ofGetHeight()/4) {
+    pos.x =  ofRandom(0,1) * 2 + pos.x;
+    pos.y =  ofRandom(0,1) * 2 + pos.y;
+
+    
+      
+  
+    
+    
+}else{
+  pos.x = catchUpSpeed * catchX + (1 - catchUpSpeed)* pos.x;
+  pos.y = catchUpSpeed * catchY + (1 - catchUpSpeed)* pos.y;
+   }
     
 
-        pos.x = catchUpSpeed * catchX + (1 - catchUpSpeed)*pos.x;
-        pos.y = catchUpSpeed * catchY + (1 - catchUpSpeed)*pos.y;
-  
     
 }
 

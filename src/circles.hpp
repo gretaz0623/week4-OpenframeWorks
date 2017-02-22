@@ -21,6 +21,9 @@ class circle{
         void mouseMoved(int x, int y );
         ofPoint pos;
         float catchUpSpeed;
+        float speedY;
+        float speedX;
+    
     };
 
 #endif /* circles_hpp */
